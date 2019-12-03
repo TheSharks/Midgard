@@ -1,5 +1,5 @@
 {
-  "name": "midgard",
+  "name": "@thesharks/midgard",
   "version": "0.0.1",
   "description": "Worker library for Heimdall",
   "main": "index.js",
@@ -18,7 +18,9 @@
   "homepage": "https://github.com/thesharks/midgard#readme",
   "dependencies": {
     "amqplib": "^0.5.5",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "https": "^1.0.0",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "eslint": "^6.6.0",

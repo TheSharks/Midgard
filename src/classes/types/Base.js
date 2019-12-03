@@ -1,4 +1,4 @@
-module.exports = class Base { // Heavily inspired by the Eris Discord bot library
+module.exports = class Base {
   constructor (id) {
     this.id = id
   }

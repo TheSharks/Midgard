@@ -9,14 +9,13 @@ module.exports = class MessageProcessor extends EventEmitter {
   }
 
   handle (msg) {
-    // console.log(msg.t)
     switch (msg.t) {
       case 'GUILD_CREATE': {
         this._client.emit('guildCreate', new Guild(msg.d))
         break
       }
       case 'MESSAGE_CREATE': {
-        this._client.emit('messageCreate', new Message(msg.d))
+        this._client.emit('messageCreate', new Message(msg.d, this._client))
         break
       }
     }
